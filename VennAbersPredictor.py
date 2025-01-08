@@ -88,9 +88,6 @@ class VennAbersBinary():
             isotonic_model_0.fit(total_scores, total_labels_0)
             isotonic_model_1.fit(total_scores, total_labels_1)
             
-            # fit isotonic models:
-            isotonic_model_0.fit(total_scores, total_labels_0)
-            isotonic_model_1.fit(total_scores, total_labels_1)
             
             # compute the lower and upper bounds for simple bing a class 1:
             p0.append(isotonic_model_0.transform([sample_score])[0])
